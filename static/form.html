@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title>{TITLE}</title>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <select id = "method" name = "method"  style="margin-bottom: 10px; margin-right: 10px;">
+        <option value="POST">POST</option>
+        <option value="PATCH">PATCH</option>
+        <option value="PUT">PUT</option>
+        <option value="DELETE">DELETE</option>
+        <option value="GET">GET</option>
+    </select>
+    <input id = "url" value="{DEFAULT_URL}">
+    <p>Request Body</p>
+    <textarea  id = "req-body" style="margin-bottom: 10px;"></textarea>
+
+    <button onclick="makeRequest()">Send Request</button>
+</body>

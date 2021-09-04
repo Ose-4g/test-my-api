@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head></head>
+    <title>Test My API</title>
+</head>
+<body>
+    <form action="/create" method="POST">
+        <span>URL (please input full url including the http or https):</span><input type="text" name="url" style="margin-bottom: 10px;"><br>
+        <span>Title. (Will show as title of your url page): </span><input type="text" name="title" style="margin-bottom: 10px;"><br>
+        <span>Request method: </span><select name = "method"  style="margin-bottom: 10px;">
+            <option value="POST" selected>POST</option>
+            <option value="PATCH">PATCH</option>
+            <option value="PUT">PUT</option>
+            <option value="DELETE">DELETE</option>
+            <option value="GET">GET</option>
+        </select><br>
+        <input type="submit" value="Create Link" style="margin-bottom: 10px;" >
+    </form>
+</body>
