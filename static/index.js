@@ -16,11 +16,19 @@ const makeRequest = async()=>{
     //alert(JSON.stringify(body))
 
 
-    const response = await axios({
-        method,
-        url,
-        data:body
-    })
+    try{
+        const response = await axios({
+            method,
+            url,
+            data:body
+        })
+        alert(JSON.stringify(response.data))
+    }
+    catch(err)
+    {
+        alert("An error occured")
+    }
 
-    alert(JSON.stringify(response.data))
+
+    
 }
